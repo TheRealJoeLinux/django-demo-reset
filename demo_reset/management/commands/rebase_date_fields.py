@@ -10,9 +10,8 @@ from django.conf import settings
 class Command(BaseCommand):
     args = "<rebase_date>"
     help = """
-    Rebases all date and datetime fields such that their offset from today will be the
-    same as their offset from the specified <rebase_date>.
-    Requires Django>1.4.
+    Rebases all date and datetime fields such that their offset from
+    today will be the same as their offset from the specified <rebase_date>.
     """
 
     def handle(self, *args, **options):
